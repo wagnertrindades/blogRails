@@ -19,7 +19,7 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
 end
-gem 'spring',        group: :development
+#gem 'spring',        group: :development
 
 gem 'devise'
 gem 'puma'
