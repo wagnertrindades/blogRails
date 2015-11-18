@@ -31,7 +31,7 @@
             <li><a href="mailto:wtrindades@hotmail.com">E-mail</a></li>
         </ul>
         <% if !user_signed_in? %>
-            <p class="sign_in">Admin Login</p>
+            <p class="sign_in"><%= link_to "Admin Login", user_session_path %></p>
         <% end %>
     </div>
 
