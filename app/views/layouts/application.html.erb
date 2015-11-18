@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -46,8 +47,8 @@
             
             <% if user_signed_in? %>
                 <div class="buttons">
-                    <button class="button"><%= link_to "Novo post", new_post_path%></button>
-                    <button class="button">Log Out</button>
+                    <button class="button"><%= link_to "Novo post", new_post_path %></button>
+                    <button class="button"><%= link_to "Sair", destroy_user_session_path, method: :delete %></button>
                 </div>
             <% end %>
         </div>
