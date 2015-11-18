@@ -35,7 +35,7 @@ a {
     left: 0;
     top: 0;
     height: 100%;
-    background: #f5f7f9;
+    background: #e0ffff;
     padding: 7em 0 0 0;
     border-right: 1px solid #d6dce0;
     #logo {
@@ -108,14 +108,15 @@ a {
     #header {
         padding: 1em 3em;
         border-bottom: 1px solid #d6dce0;
-        background: #f5f7f9;
+        background: #f0ffff;
         color: #9eafba;
         p {
             display: inline;
         }
         a {
-            color: #9eafba;
+            color: #66cdaa;
             text-decoration: none;
+            font-weight: 600;
         }
         .buttons {
             float: right;
@@ -125,6 +126,22 @@ a {
                 margin-left: .5em;
             }
         }
+    }
+    .info{
+        margin: 1em 0 0 1em;
+        padding: 1em;
+        width: 250px;
+        border-radius: 10px;
+        font-size: 1.09em;
+        color: #fff;
+        font-weight: 600;
+    }
+    .notice{
+        background: #98FB98;
+        display: none;
+    }
+    .alert{
+        background: #E9967A;
     }
     .post_wrapper {
         padding: 3em;
@@ -171,6 +188,8 @@ a {
             }
             h3 {
                 margin-top: 2em;
+                font-weight: 600;
+                font-size: 1.12em;
             }
             .comment {
                 border-bottom: 1px solid #d6dce0;
@@ -212,6 +231,7 @@ a {
             width: 300px;
             float: left;
             margin-right: 2em;
+            margin-top: 3.6em;
             img {
                 width: 100%;
                 border-radius: 0.35em;
@@ -230,6 +250,7 @@ a {
                 font-weight: 700;
                 text-decoration: none;
             }
+            ul{ list-style-type: none; }
         }
     }
     .links {
@@ -262,4 +283,12 @@ a {
             color: #33acb7;
         }
     }
+    .actions{ margin: 1em 0 2em; }
+    .link{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    .link-red{ color: #FF6347; }
+    .link-green{ color: #66CDAA; }
+    .link-blue{ color: #87CEEB; }
 }

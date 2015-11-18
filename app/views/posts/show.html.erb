@@ -6,8 +6,8 @@
     <p class="date">
         Criado há <%= time_ago_in_words(@post.created_at) %> atrás
         <% if user_signed_in? %>
-            | <%= link_to 'Editar', edit_post_path(@post) %>
-            | <%= link_to 'Apagar', post_path(@post), method: :delete, data: { confirm: 'Você tem certeza disso?'} %>
+            | <%= link_to 'Editar', edit_post_path(@post), class: "link link-green" %>
+            | <%= link_to 'Apagar', post_path(@post), method: :delete, data: { confirm: 'Você tem certeza disso?'}, class: "link link-red" %>
         <% end %>
     </p>
 
