@@ -3,7 +3,9 @@ Welcome to Blog Rails!
 
 
 This is the blog done in Ruby on Rails with the goal to learn and practice Ruby on Rails.
+
 Is hosted in url below:
+
 http://blog-wtrindades.herokuapp.com/
 
 ----------
